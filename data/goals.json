@@ -1,0 +1,16 @@
+[
+  {
+    "id": "846a51da-54e7-4433-99a1-59c251d3a99c",
+    "title": "oqishga kirish",
+    "targetAmount": 1000000.0,
+    "currentAmount": 2069250.0,
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080"
+  },
+  {
+    "id": "e1deee40-11ab-49b7-b8ff-bd5794b323cf",
+    "title": "1",
+    "targetAmount": 1231.0,
+    "currentAmount": 0.0,
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080"
+  }
+]

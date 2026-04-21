@@ -1,0 +1,82 @@
+[
+  {
+    "id": "dac00b23-c45a-4841-9027-046f1ee6334c",
+    "type": "credit",
+    "amount": 12321.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Vazifa mukofoti: 11"
+  },
+  {
+    "id": "171cd096-4c0e-41e9-b99d-24efefd84618",
+    "type": "debit",
+    "amount": 12000.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Pul yechish"
+  },
+  {
+    "id": "41183308-cb73-493e-9a69-801f75650bf9",
+    "type": "debit",
+    "amount": 250.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Maqsad: oqishga kirish"
+  },
+  {
+    "id": "25bea26a-bd7d-4f50-8693-28b78c5b8f45",
+    "type": "credit",
+    "amount": 60000.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Vazifa mukofoti: Uy tozalash"
+  },
+  {
+    "id": "898a5c57-12d6-43b7-9de3-63efc6b29f58",
+    "type": "credit",
+    "amount": 9900.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Vazifa mukofoti: j"
+  },
+  {
+    "id": "a4a91016-19a2-4367-9e7c-863d68d721f0",
+    "type": "debit",
+    "amount": 69000.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Maqsad: oqishga kirish"
+  },
+  {
+    "id": "ae7a0ea0-dbc5-4a4e-b335-ad35281b246a",
+    "type": "credit",
+    "amount": 2000000.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Vazifa mukofoti: O\u0027qish"
+  },
+  {
+    "id": "f32ae478-63f8-4bf0-811b-83443d7ff2c8",
+    "type": "debit",
+    "amount": 2000000.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Maqsad: oqishga kirish"
+  },
+  {
+    "id": "7d5d6fd5-885a-448c-90ed-24b32639e84f",
+    "type": "debit",
+    "amount": 909.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Pul yechish"
+  },
+  {
+    "id": "8c37069e-67e4-4260-a1fa-95b5ec331e8b",
+    "type": "debit",
+    "amount": 1.0,
+    "date": "2026-04-21",
+    "childId": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "description": "Pul yechish"
+  }
+]

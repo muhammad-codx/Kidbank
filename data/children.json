@@ -1,0 +1,20 @@
+[
+  {
+    "balance": 0.0,
+    "parentId": "e787ec60-dd4e-4ced-8f02-8cc497a08a48",
+    "id": "dc6ff9dc-51e5-4f54-ba45-348afde36079",
+    "name": "Lola",
+    "email": "lola@mail.ru",
+    "password": "1234",
+    "role": "child"
+  },
+  {
+    "balance": 0.0,
+    "parentId": "cb638df7-c478-400a-892b-805438089b76",
+    "id": "92182add-64d4-41c9-a887-2d45aaddf080",
+    "name": "1",
+    "email": "f@m.r",
+    "password": "1234",
+    "role": "child"
+  }
+]

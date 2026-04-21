@@ -1,0 +1,109 @@
+@startuml KidBank - Models Only
+
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam classBackgroundColor #F8FAFF
+skinparam classBorderColor #1A3FD4
+skinparam classHeaderBackgroundColor #1A3FD4
+skinparam classHeaderFontColor #FFFFFF
+skinparam ArrowColor #1A3FD4
+
+abstract class User {
+  - String id
+  - String name
+  - String email
+  - String password
+  - String role
+  + getId() : String
+  + getName() : String
+  + getEmail() : String
+  + getRole() : String
+  + setName(String) : void
+  + setEmail(String) : void
+}
+
+class Parent {
+  - List<String> childrenIds
+  + getChildren() : List<String>
+  + addChild(String id) : void
+  + removeChild(String id) : void
+}
+
+class Child {
+  - double balance
+  - String parentId
+  + getBalance() : double
+  + addBalance(double) : void
+  + subtractBalance(double) : void
+  + getParentId() : String
+}
+
+class Task {
+  - String id
+  - String title
+  - String description
+  - double reward
+  - String status
+  - String childId
+  - String parentId
+  + getStatus() : String
+  + setStatus(String) : void
+  + getReward() : double
+  + isApproved() : boolean
+}
+
+class Transaction {
+  - String id
+  - String type
+  - double amount
+  - String date
+  - String childId
+  + getType() : String
+  + getAmount() : double
+  + getDate() : String
+}
+
+class Account {
+  - String id
+  - String childId
+  - String type
+  - double balance
+  + deposit(double) : void
+  + withdraw(double) : boolean
+  + getBalance() : double
+}
+
+class SavingsGoal {
+  - String id
+  - String title
+  - double targetAmount
+  - double currentAmount
+  - String childId
+  + getProgress() : double
+  + addAmount(double) : void
+  + isComplete() : boolean
+  + getRemaining() : double
+}
+
+class SpendingPlan {
+  - String id
+  - String title
+  - String category
+  - double amount
+  - String childId
+  + isAffordable(double) : boolean
+  + getRemaining(double) : double
+  + getNeededTasks(double) : int
+}
+
+User <|-- Parent
+User <|-- Child
+Parent "1" --> "many" Child : manages
+Parent "1" --> "many" Task : creates
+Child "1" --> "many" Task : receives
+Child "1" --> "many" Account : owns
+Child "1" --> "many" Transaction : has
+Child "1" --> "many" SavingsGoal : sets
+Child "1" --> "many" SpendingPlan : plans
+
+@enduml

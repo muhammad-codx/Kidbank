@@ -1,0 +1,77 @@
+@startuml KidBank - Services Only
+
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam classBackgroundColor #F8FAFF
+skinparam classBorderColor #1A3FD4
+skinparam classHeaderBackgroundColor #1A3FD4
+skinparam classHeaderFontColor #FFFFFF
+skinparam ArrowColor #1A3FD4
+
+class JsonStorage {
+  - String filePath
+  + save(String key, Object) : void
+  + load(String key) : Object
+  + update(String key, Object) : void
+  + delete(String key) : void
+  + getAll(String key) : List
+}
+
+class AuthService {
+  - JsonStorage storage
+  + login(String email, String pass) : User
+  + register(User user) : boolean
+  + logout() : void
+  + findUser(String id) : User
+}
+
+class TaskService {
+  - JsonStorage storage
+  + createTask(Task) : void
+  + completeTask(String id) : void
+  + approveTask(String id) : void
+  + rejectTask(String id) : void
+  + getTasksByChild(String) : List
+}
+
+class BankService {
+  - JsonStorage storage
+  + deposit(String childId, double) : void
+  + withdraw(String childId, double) : boolean
+  + transfer(String, String, double) : void
+  + getHistory(String childId) : List
+  + getBalance(String childId) : double
+}
+
+class SavingsService {
+  - JsonStorage storage
+  + createGoal(SavingsGoal) : void
+  + contribute(String, double) : void
+  + getGoals(String childId) : List
+}
+
+class ReportService {
+  - JsonStorage storage
+  + getWeeklyStats(String) : Map
+  + getTopTasks(String) : List
+  + getTotalEarned(String) : double
+  + getTotalSpent(String) : double
+}
+
+class Validator {
+  + isValidAmount(double) : boolean
+  + isNotEmpty(String) : boolean
+  + isPositive(double) : boolean
+  + isValidEmail(String) : boolean
+}
+
+AuthService --> JsonStorage : uses
+TaskService --> JsonStorage : uses
+BankService --> JsonStorage : uses
+SavingsService --> JsonStorage : uses
+ReportService --> JsonStorage : uses
+TaskService --> BankService : calls on approve
+AuthService ..> Validator : validates
+BankService ..> Validator : validates
+
+@enduml
