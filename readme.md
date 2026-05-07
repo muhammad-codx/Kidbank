@@ -1,74 +1,223 @@
+<div align="center">
+
 # 💰 KidBank
 
-Smart money for smart kids 🚀
+### Smart Money for Smart Kids 🚀
+
+A simple and educational JavaFX desktop application that helps children learn money management, saving, and financial responsibility.
+
+![Java](https://img.shields.io/badge/Java-11+-orange)
+![JavaFX](https://img.shields.io/badge/JavaFX-Desktop-blue)
+![JUnit](https://img.shields.io/badge/Testing-JUnit-green)
+![Status](https://img.shields.io/badge/Status-Student_Project-purple)
+
+</div>
 
 ---
 
-## 📖 About Project
-KidBank — bolalar uchun yaratilgan moliyaviy boshqaruv ilovasi.  
-Bu loyiha bolalarga pulni boshqarish, tejash va moliyaviy savodxonlikni o‘rganishga yordam beradi.
+## 📌 About the Project
+
+**KidBank** is a desktop banking application designed for children and parents.  
+It allows children to manage virtual money, complete tasks, save for goals, and track their financial activity.
+
+Parents can create tasks and assign rewards, while children can complete tasks and earn money in a safe virtual environment.
+
+This project was developed as part of the **Software Engineering SE-25** course project.
 
 ---
 
-## ✨ Features
-- Login / Registration tizimi
-- Balansni ko‘rish
-- Pul qo‘shish
-- Pul yechish
-- Oddiy va chiroyli UI (JavaFX)
+## ✨ Key Features
+
+| Feature | Description |
+|---|---|
+| 🔐 Authentication | Login and registration system |
+| 👨‍👩‍👧 Parent & Child Roles | Separate dashboards for parents and children |
+| ✅ Task System | Parents create tasks, children complete them |
+| 💵 Rewards | Approved tasks automatically add money to child balance |
+| 🏦 Wallet | Children can view balance, deposit history, and withdraw money |
+| 🎯 Savings Goals | Children can create saving goals and track progress |
+| 📊 Statistics | Simple charts and summary cards |
+| 🧾 Transaction History | Credits and debits are stored and displayed |
+| 🎨 JavaFX UI | Clean desktop user interface |
+| 🧪 Unit Testing | Service-layer tests using JUnit |
 
 ---
 
 ## 🖼 Preview
-docs/login.png faylga screenshot qo‘ying
+
+Place screenshots inside the `docs/` folder.
+
+```bash
+docs/login.png
+docs/dashboard.png
+docs/wallet.png
+docs/savings.png
+```
+
+Example:
+
+```md
+![Login Screen](docs/login.png)
+![Dashboard](docs/dashboard.png)
+```
 
 ---
 
 ## 🗂 Project Structure
-src/main/java/app/Main.java  
-/doc/
+
+```bash
+KidBank/
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── app/
+│   │       │   └── Main.java
+│   │       ├── models/
+│   │       ├── services/
+│   │       ├── storage/
+│   │       ├── ui/
+│   │       └── utils/
+│   │
+│   └── test/
+│       └── java/
+│           └── services/
+│
+├── doc/
+├── docs/
+├── README.md
+└── pom.xml
+```
 
 ---
 
 ## ▶️ How to Run
 
-git clone <your-repo-link>  
-cd kidbank
+Clone the repository:
 
-Main classni ishga tushiring:  
+```bash
+git clone <your-repository-link>
+cd KidBank
+```
+
+Run the main file:
+
+```bash
 src/main/java/app/Main.java
+```
+
+The application entry point is:
+
+```bash
+src/main/java/app/Main.java
+```
 
 ---
 
 ## ⚙️ JavaFX Setup
 
-Agar JavaFX ishlamasa, VM options qo‘shing:
+If JavaFX does not run, add VM options:
 
+```bash
 --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml
+```
+
+Example for macOS:
+
+```bash
+--module-path /Users/yourname/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml
+```
+
+Example for Windows:
+
+```bash
+--module-path "C:\javafx-sdk\lib" --add-modules javafx.controls,javafx.fxml
+```
+
+---
+
+## 🧪 Testing
+
+Tests are located in:
+
+```bash
+src/test/java/services
+```
+
+Covered service layers:
+
+| Test Area | Description |
+|---|---|
+| AuthService | Login, registration, parent-child validation |
+| BankService | Deposit, withdraw, balance calculation |
+| TaskService | Task creation, completion, approval, rejection |
+| SavingsService | Savings goal creation and contribution |
+
+Run tests from your IDE or with Maven:
+
+```bash
+mvn test
+```
+
+---
+
+## 📂 Documentation
+
+Documentation files are stored in:
+
+```bash
+doc/
+```
+
+This folder can include:
+
+- Project report
+- User manual
+- Product backlog
+- Team members file
+- Screenshots or diagrams
 
 ---
 
 ## 📋 Requirements
-Java 11 yoki undan yuqori  
-JavaFX SDK  
-IntelliJ IDEA yoki VS Code
+
+| Requirement | Version |
+|---|---|
+| Java | 11 or higher |
+| JavaFX SDK | Required |
+| Maven | Recommended |
+| IDE | IntelliJ IDEA or VS Code |
 
 ---
 
-## 🛠 Future Plans (Backlog)
-- Database qo‘shish (PostgreSQL/MySQL)
-- Statistikalar qo‘shish
-- Mobile versiya
-- Kuchli autentifikatsiya
-- UI/UX ni yaxshilash
+## 🛠 Future Improvements
+
+- PostgreSQL or MySQL database integration
+- Better dashboard statistics
+- Mobile version
+- Stronger authentication
+- Improved UI/UX design
+- Notifications and reminders
+- Export transaction history
 
 ---
 
-## 👨‍💻 Author
-Boymirzayev Akbarshoh
+## 👨‍💻 Team Members
+
+| # | Name | Student ID |
+|---|---|---|
+| 1 | Boymirzayev Akbarshoh | SE16017 |
+| 2 | Sharifkulov Jasur | SE16058 |
+| 3 | Abdumanov Akromjon | SE16047 |
 
 ---
 
 ## ⭐ Support
-Agar loyiha yoqsa ⭐ bosishni unutmang!# Kidbank
-# Kidbank
+
+If you like this project, don't forget to leave a ⭐ on the repository!
+
+<div align="center">
+
+**KidBank — Smart Money for Smart Kids 💰**
+
+</div>
